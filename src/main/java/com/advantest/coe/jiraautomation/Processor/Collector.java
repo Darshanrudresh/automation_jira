@@ -1,35 +1,14 @@
-package com.advantest.coe.jiraautomation.Processor;
+package com.advantest.coe.jiraautomation.processor;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 /**
+ * Used to set or get the the data from POJO's
  * @author darshan.rudresh
  */
 public class Collector {
 
-    @JsonProperty("backlink")
-    private String backlink;
 
-    @JsonProperty("datasourceIdentifier")
-    private String datasourceIdentifier;
-
-    @JsonProperty("textBody")
     private String textBody;
 
-    public String getBacklink() {
-        return backlink;
-    }
-
-    public void setBacklink(String backlink) {
-        this.backlink = backlink;
-    }
-
-    public String getDatasourceIdentifier() {
-        return datasourceIdentifier;
-    }
-
-    public void setDatasourceIdentifier(String datasourceIdentifier) {
-        this.datasourceIdentifier = datasourceIdentifier;
-    }
 
     public String getTextBody() {
         return textBody;
@@ -39,12 +18,4 @@ public class Collector {
         this.textBody = textBody;
     }
 
-    @Override
-    public String toString() {
-        return "Collector{" +
-                ", backlink='" + backlink + '\'' +
-                ", datasourceIdentifier='" + datasourceIdentifier + '\'' +
-                ", textBody='" + textBody + '\'' +
-                '}';
-    }
 }
